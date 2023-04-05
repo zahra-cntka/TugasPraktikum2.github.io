@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form_Pendaftaran_Mahasiswa_Baru</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+
+        .form {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        .Kolom {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 30px;
+        }
+        .input{
+            border-radius: 7px;
+        }
+        label{
+            margin-bottom: 7px;
+        }
+        .box{
+            display: flex;
+            flex-direction: column;
+            width: 50rem;
+            margin: auto;
+        }
+        button{
+            background-color: blue;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            color: white;
+        }
+        .judul {
+            padding: 10px 0;
+        }
+        .box{
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        table thead tr th{
+            vertical-align: middle;
+            text-align: center;
+        }
+        .box-box {
+            display: flex;
+        }
+
+        .box2 {
+            width: 300px;
+            height: 300px;
+            margin: 0 0 15px 15px;
+        }
+        .box2 :hover {
+            opacity: 75%;
+            border-radius: 10px;
+            transition: ease-in 0.4s;
+        }
+        .box2 img {
+            object-fit: cover;
+            width: 300px;
+            height: 300px;
+            
+       }
+
+    </style>
+</head>
+
+<body>
+    <div class="judul">
+        <h1>Pendaftaran Mahasiswa Baru</h1>
+    </div>
+    <div class="box">
+        <form action="" class="form">
+            <div class="Kolom">
+                <label for="npm">NPM (Nomor Pokok Mahasiswa)</label>
+                <input type="number" name="npm" id="npm">
+            </div>
+            <div class="Kolom">
+                <label for="nama">Nama Lengkap</label>
+                <input type="text" name="nama" id="nama">
+            </div>
+            <div class="Kolom">
+                <label for="alamat">Alamat</label>
+                <textarea name="alamat" id="alamat" rows="3"></textarea>
+            </div>
+            <div class="Kolom">
+                <label for="npm">Jenis Kelamin</label>
+                <div class="radios">
+                    <input type="radio" name="kelamin"> Laki Laki
+                </div>
+                <div>
+                    <input type="radio" name="kelamin"> Perempuan
+                </div>
+            </div>
+            <div class="Kolom">
+                <label for="prodi">Program Studi</label>
+                <select name="prodi" id="prodi" style="padding: 4px;">
+                    <option value="TI">Informatika</option>
+                    <option value="SI">Sistem Informasi</option>
+                </select>
+            </div>
+            <div>
+                <button type="submit">Tambah</button>
+            </div>
+        </form>
+    </div>
+    <div class="wrapper">
+        <h1 class="text-center mb-5">Tabel Nilai Mahasiswa</h1>
+        <div class="mx-5">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th rowspan="2">NPM</th>
+                        <th rowspan="2">Nama Lengkap</th>
+                        <th colspan="10">Absen</th>
+                        <th colspan="10">Tugas</th>
+                        <th rowspan="2">UTS</th>
+                        <th rowspan="2">UAS</th>
+                    </tr>
+                    <tr>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                        <th>6</th>
+                        <th>7</th>
+                        <th>8</th>
+                        <th>9</th>
+                        <th>10</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                        <th>6</th>
+                        <th>7</th>
+                        <th>8</th>
+                        <th>9</th>
+                        <th>10</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>192061001</td>
+                        <td>Rina Kumala Sari</td>
+                        <td>H</td>
+                        <td>H</td>
+                        <td>H</td>
+                        <td>H</td>
+                        <td>H</td>
+                        <td>H</td>
+                        <td>H</td>
+                        <td>H</td>
+                        <td>H</td>
+                        <td>H</td>
+                        <td>90</td>
+                        <td>85</td>
+                        <td>70</td>
+                        <td>95</td>
+                        <td>88</td>
+                        <td>76</td>
+                        <td>95</td>
+                        <td>97</td>
+                        <td>80</td>
+                        <td>88</td>
+                        <td>85</td>
+                        <td>90</td>
+                    </tr>
+                    <tr>
+                        <td>192061002</td>
+                        <td>Kevin Mulyana</td>
+                        <td>H</td>
+                        <td>A</td>
+                        <td>H</td>
+                        <td>H</td>
+                        <td>H</td>
+                        <td>A</td>
+                        <td>A</td>
+                        <td>H</td>
+                        <td>H</td>
+                        <td>H</td>
+                        <td>80</td>
+                        <td>95</td>
+                        <td>90</td>
+                        <td>85</td>
+                        <td>98</td>
+                        <td>96</td>
+                        <td>75</td>
+                        <td>87</td>
+                        <td>70</td>
+                        <td>78</td>
+                        <td>95</td>
+                        <td>90</td>
+                    </tr>
+                    <tr>
+                        <td>192061003</td>
+                        <td>Lastri Handayani</td>
+                        <td>H</td>
+                        <td>H</td>
+                        <td>H</td>
+                        <td>H</td>
+                        <td>H</td>
+                        <td>H</td>
+                        <td>H</td>
+                        <td>H</td>
+                        <td>H</td>
+                        <td>H</td>
+                        <td>90</td>
+                        <td>85</td>
+                        <td>70</td>
+                        <td>95</td>
+                        <td>88</td>
+                        <td>76</td>
+                        <td>95</td>
+                        <td>97</td>
+                        <td>80</td>
+                        <td>88</td>
+                        <td>85</td>
+                        <td>90</td>
+                    </tr>
+                    <tr>
+                        <td>192061004</td>
+                        <td>Doni Sanjaya</td>
+                        <td>H</td>
+                        <td>A</td>
+                        <td>H</td>
+                        <td>H</td>
+                        <td>H</td>
+                        <td>A</td>
+                        <td>A</td>
+                        <td>H</td>
+                        <td>H</td>
+                        <td>H</td>
+                        <td>80</td>
+                        <td>95</td>
+                        <td>90</td>
+                        <td>85</td>
+                        <td>98</td>
+                        <td>96</td>
+                        <td>75</td>
+                        <td>87</td>
+                        <td>70</td>
+                        <td>78</td>
+                        <td>95</td>
+                        <td>90</td>
+                    </tr>
+                    <tr>
+                        <td>192061005</td>
+                        <td>Rina Kumala Sari</td>
+                        <td>H</td>
+                        <td>H</td>
+                        <td>H</td>
+                        <td>H</td>
+                        <td>H</td>
+                        <td>H</td>
+                        <td>H</td>
+                        <td>H</td>
+                        <td>H</td>
+                        <td>H</td>
+                        <td>90</td>
+                        <td>85</td>
+                        <td>70</td>
+                        <td>95</td>
+                        <td>88</td>
+                        <td>76</td>
+                        <td>95</td>
+                        <td>97</td>
+                        <td>80</td>
+                        <td>88</td>
+                        <td>85</td>
+                        <td>90</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="box-box">
+        <div class="box2">
+            <img src="gambar1.jpeg" alt="">
+        </div>
+        <div class="box2">
+            <img src="gambar2.jpeg" alt="">
+        </div>
+        <div class="box2">
+            <img src="gambar3.jpeg" alt="">
+        </div>
+    </div>
+    <div class="box-box">
+        <div class="box2">
+            <img src="gambar4.jpeg" alt="">
+        </div>
+        <div class="box2">
+            <img src="gambar5.jpeg" alt="">
+        </div>
+        <div class="box2">
+            <img src="gambar6.jpeg" alt="">
+        </div>
+    </div>
+</body>
+</html>
